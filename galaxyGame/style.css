@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: wheat;
+}
+
+html,
+body{
+    background-color: #15151c;
+    width: 100%;
+    height: 100%;
+    font-family: "Press Start 2P";
+    z-index: 1;
+}
+
+.main{
+    display: flex;
+}
+
+.count {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 48px;
+    visibility: initial;
+    pointer-events: none;
+    cursor: default;
+}
+
+#stars {
+    position: absolute;
+    display: inherit;
+    top: 450px;
+    left: 850px;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    visibility: initial;
+
+    animation: 1s, ease-in-out;
+    transition: 1s;
+}
+
+#game__over{
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    visibility: hidden;
+    width: 400px;
+}
+
+.game__time{
+    display: flex;
+    position: absolute;
+    font-size: 12px;
+    right: -290px;
+    top: 150px;
+}
+
+.star__scale{
+    display: flex;
+    position: absolute;
+    font-size: 12px;
+    right: -230px;
+    top: 197px;
+}
+
+.inputs{
+    margin-top: 90px;
+}
+
+.input__data{
+    width: 100%;
+    height: 50%;
+    color: #15151c;
+    font-size: 24px;
+    background-color: wheat;
+}
+
+input[type=range] {
+    accent-color: #151515;
+    cursor: pointer;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    background: wheat;
+    border-radius: 50px;
+}
+
+.reset__button{
+    color: #15151c;
+    background-color: wheat;
+    font-size: 18px;
+    cursor: pointer;
+}

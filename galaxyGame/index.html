@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/gif/png" href="starsImg/starYellow.png">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Galaxy Game</title>
+</head>
+<body>
+    
+    <div class="main">
+        <img id="stars" src="starsImg/starYellow.png">
+    </div>
+
+    <div id="game__over"> 
+        <p>Game Over!</p>
+        <p class="game__time">Время игры в секундах</p>
+        <p class="star__scale">Размер заёздочки</p>
+        <div class="inputs">
+            <input class="input__data" name="input__countdown" type="number">
+            <input class="input__data input__star-size" min="0" max="100" type="range">
+            <input class="reset__button" id="reset" value="Старт" type="submit">
+        </div>
+    </div>
+
+
+<div class="count">0</div>
+<script src="script.js"></script>
+</body>
+</html>
